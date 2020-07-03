@@ -1,35 +1,24 @@
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-Thin.woff2') format('woff2'),
-        url('../fonts/TTLakes-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'TTLakes-Regular';
+	src: url('../fonts/TTLakes-Regular.eot');
+	src: local('☺'), url('../fonts/TTLakes-Regular.woff') format('woff'), url('../fonts/TTLakes-Regular.ttf') format('truetype'), url('../fonts/TTLakes-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-ExtraLight.woff2') format('woff2'),
-        url('../fonts/TTLakes-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes-ThinItalic.woff2') format('woff2'),
-        url('../fonts/TTLakes-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
+	font-family: 'TTLakes-Bold';
+	src: url('../fonts//TTLakes-Bold.eot');
+	src: local('☺'), url('../fonts//TTLakes-Bold.woff') format('woff'), url('../fonts/TTLakes-Bold.ttf') format('truetype'), url('../fonts/TTLakes-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
 }
 
 body{
     margin: 0;
     padding: 0;
-    font-family: "TT Lakes", Arial, sans-serif;
-    font-weight: 600;
+    font-family: "TTLakes-Regular", Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -49,6 +38,11 @@ ul {
     padding: 0;
 }
 
+.header{
+    width: 100%;
+    background-color: #fff;
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
@@ -57,9 +51,8 @@ ul {
     padding: 10px;
 }
 
-.header__repair--none,
-.header__checkstatus--none
- {
+.header__repairTitle,
+.header__checkstatusTitle {
     display: none;
 }
 
@@ -71,7 +64,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    width: 180px;
 }
 
 .containerLogo::after {
@@ -88,22 +81,31 @@ ul {
     align-items: center;
 }
 
+a img{
+    transition: all 0.4s ease-in-out;
+}
+
+a:hover img{
+    transform: rotate(360deg);
+}
+
 .serviceContainer {
     display: flex;
     justify-content: space-between;
     width: 100px;
 }
-
 .main {
     background: #F8F8F8;
     border-top: 1px solid #D9FFF5;
 }
 
-.main__h1 {
+.main__headline {
     display: flex;
+    font-family: "TTLakes-Bold", Arial, sans-serif;
+    line-height: 40px;
 }
 
-.main__h1::before {
+.main__headline::before {
     content: "";
     width: 4px;
     height: 40px;
@@ -113,10 +115,14 @@ ul {
     margin-right: 12px;
 }
 
+.menuCentermen {
+    margin: 0 15px;
+}
+
 .menu {
-display: flex;
-overflow: auto;
-white-space: nowrap;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .menu__link {
@@ -134,7 +140,6 @@ white-space: nowrap;
 .companyDescription__title {
     display: block;
     width: 288px;
-    height: 90px;
     overflow: hidden;
     margin-left: 15px;
     margin-right: 15px;
@@ -148,8 +153,15 @@ white-space: nowrap;
     background-image: url("../img/pictureTitle.png");
     background-size: 320px 176px;
     background-repeat: no-repeat;
-    margin-top: 20px;
     border-radius: 6px;
+}
+
+.pictureTitleCentermen {
+    margin-top: 20px;
+}
+
+.companyDescription__title№2 {
+    display: none;
 }
 
 .companyDescription__button {
@@ -171,9 +183,22 @@ white-space: nowrap;
 
 .containerCommunications {
     display: flex;
-    width: 160px;
+    width: 175px;
     justify-content: space-between;
     align-items: center;
+}
+
+.containerCommunicationsCentermen {
+    margin-left: 240px;
+}
+
+.containerLogo {
+    width: 200px;
+}
+
+.containerLogo__logo {
+    width: 120px;
+    justify-content: space-between;
 }
 
 .containerLogo::after {
@@ -205,6 +230,7 @@ white-space: nowrap;
 
 .main__title {
     display: flex;
+    justify-content: space-between;
 }
 
 .pictureTitle {
@@ -215,16 +241,33 @@ white-space: nowrap;
 
 .companyDescription__title {
     width: 312px;
-    min-height: 160px;
+}
+
+.companyDescription__title№2 {
+    display: block;
+    height: 30px;
 }
 }
 
 @media (min-width: 1120px) {
 
-.centerman {
+.header {
     width: 1120px;
+    margin: 0 auto;
 }
 
+.main {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.centerman {
+    width: 1120px
+}
+
+.menuCentermen {
+    margin: 0 28px;
+}
 .containerCommunications {
     display: none;
 }
@@ -233,15 +276,20 @@ white-space: nowrap;
     width: 490px;
 }
 
+.companyDescription__title№2 {
+    height: auto;
+}
+
 .pictureTitle {
     width: 532px;
     min-height: 307px;
     background-size: 532px 307px;
 }
 
-.header__repair--none,
-.header__checkstatus--none {
+.header__repairTitle,
+.header__checkstatusTitle {
     display: inline;
+    color: #1B1C21;
 }
 
 .serviceContainer {
@@ -265,6 +313,14 @@ white-space: nowrap;
 
 .main {
     margin-top: -70px;
+}
+
+.main__title {
+    padding: 0 28px;
+}
+
+.main__headline::before {
+    margin-right: 45px;
 }
 
 }
