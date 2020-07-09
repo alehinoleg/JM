@@ -23,7 +23,6 @@ body{
 }
 
 .centerman {
-    width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -139,19 +138,17 @@ a:hover img{
 
 .companyDescription__title {
     display: block;
-    width: 288px;
     overflow: hidden;
     margin-left: 15px;
     margin-right: 15px;
 }
 
 .pictureTitle {
-    width: 320px;
     min-height: 180px;
     left: 0px;
     top: 240px;
     background-image: url("../img/pictureTitle.png");
-    background-size: 320px 176px;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 6px;
 }
@@ -177,10 +174,6 @@ a:hover img{
 
 @media (min-width: 768px) {
 
-.centerman {
-    width: 768px;
-}
-
 .containerCommunications {
     display: flex;
     width: 175px;
@@ -188,7 +181,7 @@ a:hover img{
     align-items: center;
 }
 
-.containerCommunicationsCentermen {
+.containerLogo__wrap {
     margin-left: 240px;
 }
 
@@ -239,9 +232,7 @@ a:hover img{
     background-size: 360px 280px;
 }
 
-.companyDescription__title {
-    width: 312px;
-}
+
 
 .companyDescription__title№2 {
     display: block;
