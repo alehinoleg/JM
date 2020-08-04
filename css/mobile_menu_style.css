@@ -59,7 +59,7 @@ ul {
     transform: scale(1.1);
 }
 
-.headerMobileMenu__button---indentation {
+.headerMobileMenu__button--indentation {
     margin-left: 50px;
 }
 
@@ -74,6 +74,10 @@ ul {
     justify-content: space-between;
     align-items: flex-start;
     height: 88%;
+}
+
+.mobileMenu {
+    width: 100%;
 }
 
 .mobileMenu a {
@@ -120,10 +124,18 @@ ul {
     transform: scale(1.1);
 }
 
+.info__mail {
+    color: #1B1C21;
+    margin: 16px 0;
+    display: block;
+}
+
 .info__telephone {
+    display: block;
     font-family: "TTLakes-Bold", Arial, sans-serif;
     font-size: 24px;
     margin: 0 0 40px 0;
+    color: black;
 }
 
 .info__lang button {
@@ -135,5 +147,9 @@ ul {
 
 .info__lang .active {
     color: #7E7E82;
+}
+
+.info__lang button:hover {
+    font-weight: bold;
 }
 

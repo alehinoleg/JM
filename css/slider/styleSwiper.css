@@ -1,0 +1,139 @@
+@font-face {
+	font-family: 'TTLakes-Regular';
+	src: url('../fonts/TTLakes-Regular.eot');
+	src: local('☺'), url('../fonts/TTLakes-Regular.woff') format('woff'), url('../fonts/TTLakes-Regular.ttf') format('truetype'), url('../fonts/TTLakes-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'TTLakes-Bold';
+	src: url('../fonts/TTLakes-Bold.eot');
+	src: local('☺'), url('../fonts/TTLakes-Bold.woff') format('woff'), url('../fonts/TTLakes-Bold.ttf') format('truetype'), url('../fonts/TTLakes-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+.tittle__brand {
+    color: #7E7E82;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #F2F2F2, white);
+    padding: 16px;
+    border-top: 2px solid #D9FFF5;
+}
+
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+}
+
+.swiper-container {
+    padding-bottom: 30px;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 24px;
+}
+
+.swiper-wrapper {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 224px;
+    height: 72px;
+    flex-shrink: 0;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.bottomButton {
+    border: none;
+    background-color: #F2F2F2;
+    background-image: url(../img/services/bottomicon.svg);
+    background-repeat: no-repeat;
+    width: 125px;
+    background-position: 5% 50%
+}
+
+.bottomButton--none {
+    display: none;
+}
+
+.topButton {
+    display: none;
+    border: none;
+    background-color: #F2F2F2;
+    background-image: url(../img/services/topicon.svg);
+    background-repeat: no-repeat;
+    width: 125px;
+    background-position: 5% 50%
+}
+
+.topButton--block {
+    display: block;
+}
+
+.brands--height {
+    height: 100%;
+}
+
+
+
+@media (max-width: 320px) {
+    .card {
+        margin: 0;
+    }
+
+    .swiper-wrapper {
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slider-container {
+        height: 205px;
+    }
+
+    .slider-container--height {
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 1127px) {
+    body {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .tittle__brand {
+        padding-left: 32px;
+    }
+
+    .card {
+        width: 240px;
+    }
+
+    .card:nth-child(4n) {
+        margin-right: 0;
+    }
+    
+    .swiper-wrapper {
+        padding-left: 25px;
+    }
+
+    .slider-container {
+        height: 220px;
+    }
+
+    .slider-container--height {
+        height: 100%;
+    }
+}
