@@ -1,3 +1,20 @@
+@font-face {
+	font-family: 'TTLakes-Regular';
+	src: url('../../fonts/TTLakes-Regular.eot');
+	src: local('☺'), url('../../fonts/TTLakes-Regular.woff') format('woff'), url('../../fonts/TTLakes-Regular.ttf') format('truetype'), url('../../fonts/TTLakes-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'TTLakes-Bold';
+	src: url('../../fonts/TTLakes-Bold.eot');
+	src: local('☺'), url('../../fonts/TTLakes-Bold.woff') format('woff'), url('../../fonts/TTLakes-Bold.ttf') format('truetype'), url('../../fonts/TTLakes-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,9 +22,8 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	color: #fff;
 	font-family: "TTLakes-Regular", Arial, sans-serif;
+	color: #fff;
 }
 
 a {

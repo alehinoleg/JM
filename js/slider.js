@@ -4,12 +4,13 @@ const slider = document.querySelector('.slider-container');
 let mySwiper;
 
 function mobileSlider () {
-    if (window.innerWidth <= 320 && slider.dataset.mobile == 'false') {
+    if (window.innerWidth <= 510 && slider.dataset.mobile == 'false') {
         mySwiper = new Swiper(slider, {
             slidesPerView: 1,
             spaceBetween: 10,
             loop: true,
             slideClass: 'card',
+            effect: "coverflow",
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
@@ -19,7 +20,7 @@ function mobileSlider () {
         slider.dataset.mobile = 'true';
     }
 
-    if (window.innerWidth > 320) {
+    if (window.innerWidth > 510) {
         slider.dataset.mobile = 'false';
 
         if (slider.classList.contains('swiper-container-initialized')) {

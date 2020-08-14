@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'TTLakes-Regular';
-	src: url('../fonts/TTLakes-Regular.eot');
-	src: local('☺'), url('../fonts/TTLakes-Regular.woff') format('woff'), url('../fonts/TTLakes-Regular.ttf') format('truetype'), url('../fonts/TTLakes-Regular.svg') format('svg');
+	src: url('../../fonts/TTLakes-Regular.eot');
+	src: local('☺'), url('../../fonts/TTLakes-Regular.woff') format('woff'), url('../../fonts/TTLakes-Regular.ttf') format('truetype'), url('../../fonts/TTLakes-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -9,16 +9,22 @@
 
 @font-face {
 	font-family: 'TTLakes-Bold';
-	src: url('../fonts/TTLakes-Bold.eot');
-	src: local('☺'), url('../fonts/TTLakes-Bold.woff') format('woff'), url('../fonts/TTLakes-Bold.ttf') format('truetype'), url('../fonts/TTLakes-Bold.svg') format('svg');
+	src: url('../../fonts/TTLakes-Bold.eot');
+	src: local('☺'), url('../../fonts/TTLakes-Bold.woff') format('woff'), url('../../fonts/TTLakes-Bold.ttf') format('truetype'), url('../../fonts/TTLakes-Bold.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
+}
+
+body {
+	font-family: "TTLakes-Regular", Arial, sans-serif;
 }
 
 .tittle__brand {
     color: #7E7E82;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: lighter;
     text-transform: uppercase;
     background-image: linear-gradient(to right, #F2F2F2, white);
     padding: 16px;
@@ -55,7 +61,7 @@
 .bottomButton {
     border: none;
     background-color: #F2F2F2;
-    background-image: url(../img/services/bottomicon.svg);
+    background-image: url(../../img/services/bottomicon.svg);
     background-repeat: no-repeat;
     width: 125px;
     background-position: 5% 50%
@@ -69,7 +75,7 @@
     display: none;
     border: none;
     background-color: #F2F2F2;
-    background-image: url(../img/services/topicon.svg);
+    background-image: url(../../img/services/topicon.svg);
     background-repeat: no-repeat;
     width: 125px;
     background-position: 5% 50%
@@ -83,9 +89,19 @@
     height: 100%;
 }
 
+.background {
+    padding: 10px 40px;
+    background-color: #F2F2F2;
+}
+
+@media (max-width: 510px) {
+    .background {
+        display: none;
+    }
+}
 
 
-@media (max-width: 320px) {
+@media (max-width: 510px) {
     .card {
         margin: 0;
     }
@@ -104,6 +120,7 @@
     .slider-container--height {
         height: 100%;
     }
+
 }
 
 
